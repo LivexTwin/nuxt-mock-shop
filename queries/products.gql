@@ -1,0 +1,51 @@
+query Products($first: Int!, $query: String) {
+  products(first: $first, query: $query) {
+    edges {
+      node {
+        id
+        title
+        handle
+        description
+        priceRange {
+          maxVariantPrice {
+            amount
+            currencyCode
+          }
+        }
+        images(first: 1) {
+          edges {
+            node {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+# query Products {
+#   products(first: 20) {
+#     edges {
+#       node {
+#         id
+#         title
+#         handle
+#         description
+#         priceRange {
+#           maxVariantPrice {
+#             amount
+#             currencyCode
+#           }
+#         }
+#         images(first: 5) {
+#           edges {
+#             node {
+#               url
+#             }
+#           }
+#         }
+#       }
+#     }
+#   }
+# }

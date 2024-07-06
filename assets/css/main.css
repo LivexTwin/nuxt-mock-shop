@@ -1,0 +1,48 @@
+/* MOBILE */
+
+/* Prevent scrolling when menu is active */
+.is-active {
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 80rem;
+  min-height: 90dvh;
+  padding: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-bottom: 5rem;
+}
+
+main {
+  font-family: "kanit", sans-serif;
+}
+
+span {
+  color: var(--clr-neutral);
+  font-size: var(--size-xs);
+}
+
+pre {
+  margin-top: -0.3rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--clr-primary200);
+  color: var(--clr-light);
+  font-family: "kanit", sans-serif;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--clr-primary100);
+}
+
+/* DESKTOP */
