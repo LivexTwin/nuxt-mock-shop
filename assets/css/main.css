@@ -28,7 +28,11 @@ span {
 }
 
 pre {
-  margin-top: -0.3rem;
+  margin-top: -0.15rem;
+  font-size: var(--size-sm);
+  font-weight: 900;
+  font-family: "voltaire", sans-serif;
+  color: var(--clr-neutral);
 }
 
 .btn {

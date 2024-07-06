@@ -67,6 +67,7 @@ const validateEmail = (email: string, string: undefined) => {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: var(--size-sm);
   gap: 1rem;
 }
 

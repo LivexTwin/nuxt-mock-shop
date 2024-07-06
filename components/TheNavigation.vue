@@ -6,8 +6,10 @@
 
     <!-- mobile  -->
     <div class="menu" :class="{ 'is-active': isMenuActive }">
-      <NuxtLink to="/" @click="toggleMenu">Home</NuxtLink>
-      <NuxtLink to="/catalog" @click="toggleMenu">Catalog</NuxtLink>
+      <ul>
+        <li><NuxtLink to="/" @click="toggleMenu">Home</NuxtLink></li>
+        <li><NuxtLink to="/catalog" @click="toggleMenu">Catalog</NuxtLink></li>
+      </ul>
     </div>
     <div class="hamburger" @click="toggleMenu">
       <div :class="{ 'is-active': isMenuActive }">
@@ -60,7 +62,12 @@ watch(isMenuActive, (newVal) => {
 
 .menu {
   display: flex;
-  gap: 1rem;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--size-3xl);
+  gap: 5rem;
 }
 
 .menu a {
@@ -136,7 +143,6 @@ watch(isMenuActive, (newVal) => {
     align-items: center;
     z-index: 10;
     justify-content: center;
-    gap: 5rem;
     transition: transform 500ms ease-in-out;
     transform: translateX(100%);
   }

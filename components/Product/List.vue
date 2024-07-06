@@ -25,7 +25,7 @@ const props = defineProps({
 .product-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 @media (min-width: 768px) {

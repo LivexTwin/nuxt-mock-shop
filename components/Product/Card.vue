@@ -63,7 +63,7 @@ const props = defineProps({
 .product-card {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 0 auto;
   width: 20rem;
 }
