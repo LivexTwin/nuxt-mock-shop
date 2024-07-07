@@ -1,9 +1,9 @@
 /* MOBILE */
 
 /* Prevent scrolling when menu is active */
-.is-active {
+/* .is-active {
   display: none;
-}
+} */
 
 .no-scroll {
   overflow: hidden;
